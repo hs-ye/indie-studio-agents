@@ -99,12 +99,12 @@ gh issue comment [ticket-number] \
 
 **Status**: Ready for deployment"
 
-# Update ticket labels (see qwen.md for label configuration)
+# Update ticket labels (see Qwen/Claude/Gemini/Claude/Gemini.md for label configuration)
 gh issue edit [ticket-number] \
   --add-label "[QA_PASSED_LABEL]" \
   --remove-label "[READY_FOR_QA_LABEL]"
 
-# Update project board status to 'Done' (see qwen.md for project board configuration)
+# Update project board status to 'Done' (see Qwen/Claude/Gemini.md for project board configuration)
 ITEM_ID=$(gh issue view [ticket-number] --json projectItems --jq '.projectItems[0].id')
 gh project item-edit --id $ITEM_ID --field-id [PROJECT_BOARD_FIELD_ID] --project-id [PROJECT_ID] --single-select-option-id [DONE_STATUS_OPTION_ID]
 ```
@@ -142,7 +142,7 @@ Created bug report #[bug-issue-number] for issues found during testing.
 
 **Status**: Blocked pending bug fixes"
 
-# Update project board status back to 'In progress' to indicate work needed (see qwen.md for project board configuration)
+# Update project board status back to 'In progress' to indicate work needed (see Qwen/Claude/Gemini.md for project board configuration)
 ITEM_ID=$(gh issue view [ticket-number] --json projectItems --jq '.projectItems[0].id')
 gh project item-edit --id $ITEM_ID --field-id [PROJECT_BOARD_FIELD_ID] --project-id [PROJECT_ID] --single-select-option-id [IN_PROGRESS_STATUS_OPTION_ID]
 ```
@@ -196,7 +196,7 @@ gh issue comment [ticket-number] \
 
 3. **Add project-manager-review label**:
 ```bash
-gh issue edit [blocking-issue-number] --add-label "[PROJECT_MANAGER_REVIEW_LABEL]" (see qwen.md for label configuration)
+gh issue edit [blocking-issue-number] --add-label "[PROJECT_MANAGER_REVIEW_LABEL]" (see Qwen/Claude/Gemini.md for label configuration)
 ```
 
 4. **Continue with other non-blocked tickets** if available

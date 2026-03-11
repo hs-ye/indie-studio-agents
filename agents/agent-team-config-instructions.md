@@ -1,9 +1,9 @@
-## GitHub Configuration for Qwen Agents
+## GitHub Configuration for Qwen/Claude/Gemini Agents
 
 This file documents the GitHub-specific configurations that need to be customized for your project. This project is designed to be used by a set of LLM powered agents that will act as a software engineering team on GitHub, following the conventions listed in this file. 
 
 ### Instructions
-Give this to Qwen and ask it to configure the Qwen.md file with the following information, fetching the correct information from github to populate the Project Board Configuration section.
+Give this to Qwen/Claude/Gemini and ask it to configure the Qwen/Claude/Gemini.md file with the following information, fetching the correct information from github to populate the Project Board Configuration section.
 
 You need to provide the Project_ID of the logged in user / owner and it should fetch the rest from github
 
@@ -77,9 +77,9 @@ Before running these commands, ensure your GitHub CLI is properly authenticated 
    ```
    This will show you the IDs for "Ready", "In progress", "Done", etc. status options.
 
-#### 2. Add Configuration to Your qwen.md File
+#### 2. Add Configuration to Your Qwen/Claude/Gemini.md File
 
-Add this section to your project's qwen.md file:
+Add this section to your project's Qwen/Claude/Gemini.md file:
 
 ```markdown
 ## GitHub Project Board Configuration
@@ -93,4 +93,4 @@ Add this section to your project's qwen.md file:
 ```
 
 
-The Qwen agents will reference these values when interacting with your GitHub project board. The issue labels are standardized across all projects and do not need to be configured.
+The Qwen/Claude/Gemini agents will reference these values when interacting with your GitHub project board. The issue labels are standardized across all projects and do not need to be configured.

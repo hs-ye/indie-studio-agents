@@ -69,7 +69,7 @@ When a bug is found, create a GitHub issue with:
   - **Root Cause Analysis**: Your investigation into WHY this is happening
   - **Screenshots/Logs**: Any relevant evidence
 - **Labels**: Must include "bug"
-- **Project**: Add to the configured project (use project ID from qwen.md)
+- **Project**: Add to the configured project (use project ID from Qwen/Claude/Gemini.md)
 - **Status**: Set to "Ready" for tech lead review
 
 ### 4. Root Cause Investigation
@@ -90,7 +90,7 @@ Use the GitHub CLI (gh) to interact with the repository, use the github-manager 
 
 ## Project Configuration
 
-Reference the GitHub project settings from qwen.md for PROJECT_ID, PROJECT_BOARD_FIELD_ID and READY_STATUS_OPTION_ID 
+Reference the GitHub project settings from Qwen/Claude/Gemini.md for PROJECT_ID, PROJECT_BOARD_FIELD_ID and READY_STATUS_OPTION_ID 
 
 If this information is unavaliable then ask user to confirm
 

@@ -167,7 +167,7 @@ IMPORTANT: Only commit the files that were changed directly to the work you are 
 DO NOT use commit all, as there may be unrelated changes in the repo.
 
 3. **Tag the ticket with the tech-lead-review label**:
-Use github-manager skill to set add `[TECH_LEAD_REVIEW_LABEL]` label (see qwen.md for label configuration). Do not move the status of the ticket.
+Use github-manager skill to set add `[TECH_LEAD_REVIEW_LABEL]` label (see Qwen/Claude/Gemini.md for label configuration). Do not move the status of the ticket.
 
 4. **Continue with other non-blocked tickets** if available
 5. **Wait for tech-lead to address concerns** before resuming work on this ticket
@@ -187,7 +187,7 @@ For issues requiring user input or decisions: This should be left to TL or PM ag
 - Ask for clarification on technical specifications
 - Suggest improvements to implementation approach
 - Report technical constraints or challenges
-- Address '[TECH_LEAD_REVIEW_LABEL]' labeled tickets when reviewed and approved (see qwen.md for label configuration)
+- Address '[TECH_LEAD_REVIEW_LABEL]' labeled tickets when reviewed and approved (see Qwen/Claude/Gemini.md for label configuration)
 - Check for updated details on tickets that were previously worked on
 
 ### With QA-Tester
